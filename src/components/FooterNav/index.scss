@@ -1,0 +1,31 @@
+.header{
+    width: 100%;
+    height: 1.12rem;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    box-shadow: 0 -11px 32px rgba(0,0,0,.08);
+    ul{
+        padding: 0 0.7rem;
+        display: flex;
+        height:1.12rem;
+        justify-content: space-around;
+        align-items: center;
+        li{
+            flex: 1;
+            text-align: center;
+            .header-icon{
+                display: block;
+                width: 0.5rem;
+                height: 0.5rem;
+                margin: 0  auto;
+            }
+            a{
+                display: block;
+                font-size: 0.28rem;
+                margin-top: 0.1rem;
+            }
+        }
+    }
+}
