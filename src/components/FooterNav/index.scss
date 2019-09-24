@@ -12,19 +12,78 @@
         height:1.12rem;
         justify-content: space-around;
         align-items: center;
+        &::before{
+            content: "";
+            position: absolute;
+            top: -1px;
+            height: 1px;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,.08);
+            -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+            -webkit-transform: scaleY(.66667);
+            transform: scaleY(.66667);
+
+        }
         li{
+            position: relative;
             flex: 1;
             text-align: center;
-            .header-icon{
+            cursor: pointer;
+            height: 100%;
+            .icon{
+                -webkit-mask-image:url(/images/tab-home.svg);
                 display: block;
-                width: 0.5rem;
-                height: 0.5rem;
-                margin: 0  auto;
+                margin: .125rem auto .09rem;
+                width: .54rem;
+                height: .54rem;
+                background-repeat: no-repeat;
+                background-size: .54rem;
+                background-color: #b3b3b3;
+                background-image: none;
+               
             }
-            a{
-                display: block;
-                font-size: 0.28rem;
-                margin-top: 0.1rem;
+            h5{
+                color: #9a9a9a;
+                font-size: 0.8rem;
+                font-weight: 700;
+                position: relative;
+                width: 300%;
+                left: -100%;
+                // line-height: .8rem;
+                -webkit-transform-origin: 50% 0;
+                transform-origin: 50% 0;
+                -webkit-transform: scale(.33333);
+                transform: scale(.33333);
+            }
+            &:nth-child(2){
+                .icon{
+                    -webkit-mask-image:url(/images/tab-classification.svg);
+                }
+                
+            }
+            &:nth-child(3){
+                .icon{
+                    -webkit-mask-image:url(/images/tab-packbag.svg);
+                }
+                
+            }
+            &:nth-child(4){
+                .icon{
+                    -webkit-mask-image:url(/images/tab-contact.svg);
+                }
+                
+            }
+            &.ac{
+                h5{
+                    color: #d44d44;
+                    font-size: 0.9rem;
+                }
+                .icon{
+                    background-color: #d44d44;
+                    transform: scale(1.1)
+                }
             }
         }
     }

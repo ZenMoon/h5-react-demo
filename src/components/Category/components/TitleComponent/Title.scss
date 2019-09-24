@@ -1,0 +1,22 @@
+.cate-title{
+    padding: 0 0.25rem;
+    height: 0.8rem;
+    line-height: 40px;
+    font-size: 0.3rem;
+    font-weight: 700;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #ffffff;
+}
+.cate-img{
+    padding: 0 0.25rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    // border-top:1px solid #ebebeb;
+    img{
+        width: 100%;
+        height: 1.8rem;
+    }
+}
